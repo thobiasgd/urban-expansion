@@ -1,4 +1,3 @@
-
 import ee
 
 # Configurações
@@ -13,11 +12,10 @@ ANO_INICIAL = 1985
 ANO_FINAL = 2025
 CLASSE_URBANA = 24
 
-
 def main():
 
     # 1. Autenticar e conectar ao Earth Engine
-    print("Conectando ao Google Earth Engine...")
+    print("Conectando ao Google Earth Engine")
 
     ee.Authenticate()
     ee.Initialize(project=PROJECT_ID)
@@ -25,12 +23,12 @@ def main():
     print("Conexão estabelecida!")
 
     # 2. Carregar a imagem do MapBiomas
-    print("\nCarregando MapBiomas...")
+    print("\nCarregando MapBiomas")
 
     imagem = ee.Image(MAPBIOMAS_ASSET)
 
     # 3. Consultar as bandas disponíveis
-    bandas = imagem.bandNames().getInfo()
+    bandas = imagem.bandNames(). getInfo()
 
     print(f"Total de bandas encontradas: {len(bandas)}")
 
@@ -51,7 +49,7 @@ def main():
             f"Bandas ausentes: {bandas_faltantes}"
         )
 
-    print("Série histórica de 1985 a 2025 confirmada!")
+    print("Série histórica de 1985 a 2025 confirmada")
 
     # 5. Selecionar a classificação de 2025
     mapa_2025 = imagem.select("classification_2025")
@@ -69,7 +67,6 @@ def main():
     )
 
     print("\nPrimeira etapa concluída!")
-
 
 if __name__ == "__main__":
     main()
