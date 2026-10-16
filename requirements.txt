@@ -1,1 +1,6 @@
 earthengine-api
+geopandas
+requests
+numpy
+rasterio
+matplotlib
