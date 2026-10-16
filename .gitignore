@@ -1,0 +1,28 @@
+# Ambientes virtuais Python
+venv/
+.venv/
+env/
+.env/
+
+# Cache e arquivos compilados Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build e empacotamento
+build/
+dist/
+*.egg-info/
+
+# Configuracoes locais e segredos
+.env
+.env.*
+!.env.example
+
+# Notebooks e arquivos do sistema operacional
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+Desktop.ini
