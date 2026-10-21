@@ -26,3 +26,7 @@ dist/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Dados baixados/processados e resultados gerados
+/data/
+/outputs/
