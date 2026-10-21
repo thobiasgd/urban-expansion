@@ -4,3 +4,5 @@ requests
 numpy
 rasterio
 matplotlib
+scipy
+affine
